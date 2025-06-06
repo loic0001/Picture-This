@@ -16,34 +16,48 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
 
-      <picture>
+       <picture>
       <!-- Square images for viewports 960px and larger -->
-      <source 
-        media="(min-width: 960px)"
-        srcset="
-          images/sq_480.jpg 480w,
-          images/sq_960.jpg 960w,
-          images/sq_1440.jpg 1440w,
-          images/sq_1960.jpg 1920w
-        "
-        sizes="50vw">
+      <source srcset="images/sq-480.jpg ,
+                     images/sq-960.jpg 2x,
+                     images/sq-1440.jpg 3x"
+              media="(min-width: 960px) ">
+      
+      <source srcset="images/sq-640.jpg ,
+                     images/sq-1280.jpg 2x,
+                     images/sq-1920.jpg 3x"
+              media="(min-width: 1280px)">
+      
+      <source srcset="images/sq-800.jpg ,
+                     images/sq-1600.jpg 2x,
+                     images/sq-2400.jpg 3x"
+              media="(max-width: 1599px)">
       
       <!-- Landscape images for viewports smaller than 960px -->
-      <source 
-        srcset="
-          images/ls_320.jpg 320w,
-          images/ls_640.jpg 640w,
-          images/ls_960.jpg 960w,
-          images/ls_1440.jpg 1440w,
-          images/ls_1920.jpg 1920w
-        "
-        sizes="100vw">
+      <source srcset="images/ls-320.jpg ,
+                     images/ls-640.jpg 2x,
+                     images/ls-960.jpg 3x"
+              media="(min-width: 320px)">
       
-      <!-- Fallback image -->
-    <img src="images/museum.jpg" alt="placeholder">
+      <source srcset="images/ls-480.jpg ,
+                     images/ls-960.jpg 2x,
+                     images/ls-1440.jpg 3x"
+              media="(min-width: 480px)">
 
+      <source srcset="images/ls-720.jpg ,
+                     images/ls-1440.jpg 2x,
+                     images/ls-2160.jpg 3x"
+              media="(min-width: 720px)">
+      
+      <source srcset="images/ls-960.jpg ,
+                     images/ls-1920.jpg 2x,
+                     images/ls-2880.jpg 3x"
+              media=" (max-width: 959px)">
+      
+              <img src="images/museum.jpg" alt="placeholder">
+    </picture>
+      
   </header>
 </body>
-
 
 </html>
